@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">SeasonTicket72</string>
+    <string name="title_users">Users</string>
+    <string name="title_season_ticket">Season ticket</string>
+    <string name="user_list">Users</string>
+    <string name="add_user_new_record">Add new user</string>
+    <string name="add_user_name">Add name</string>
+    <string name="action_add">Add</string>
+    <string name="success_add">Success</string>
+    <string name="action_close">Close</string>
+    <string name="add_user_surname">Add surname</string>
+    <string name="error_add">Name or surname cannot be empty</string>
+    <string name="error_last_ticket_still_open">Your ticket is still open. You need to close ticket.</string>
+    <string name="error_bad_data">Invalid date. Select a date later than the closing date of your last subscription.</string>
+    <string name="Ok">Ok</string>
+    <string name="sell_ticket">Sell ticket</string>
+    <string name="daily_previous_day">Previous day</string>
+    <string name="daily_next_day">Next day</string>
+    <string name="count_exercises">Count: </string>
+    <string name="choose_user">Choose user</string>
+    <string name="select_user">Select user</string>
+    <string name="sell_number_days">Select the number of days</string>
+    <string name="get_ticket">Get ticket</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Exercises">Exercises</string>
+    <string name="previous_month">Previous month</string>
+    <string name="next_month">Next month</string>
+    <string name="Close">Close</string>
+    <string name="Open">Open</string>
+    <string name="user">User</string>
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+    <string name="OpenCloseTicket">Open/Close season ticket</string>
+    <string name="userguide">User guide</string>
+</resources>

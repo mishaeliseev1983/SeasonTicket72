@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Абонемент72</string>
+    <string name="title_users">Ученики</string>
+    <string name="title_season_ticket">Отметить</string>
+    <string name="user_list">Ученики</string>
+    <string name="add_user_new_record">Добавить ученика</string>
+    <string name="add_user_name">Имя</string>
+    <string name="action_add">Добавить</string>
+    <string name="success_add">Удачно</string>
+    <string name="action_close">Закрыть</string>
+    <string name="add_user_surname">Фамилия</string>
+    <string name="error_add">Имя или фамилия не может быть пустой</string>
+    <string name="error_last_ticket_still_open">Ваш абонемент все еще открыт. Вам нужно закрыть текущий абонемент.</string>
+    <string name="error_bad_data">Некорректная дата. Выберите дату позже даты закрытия вашего последнего абонемента.</string>
+    <string name="Ok">Ок</string>
+    <string name="sell_ticket">Новый</string>
+    <string name="daily_previous_day">Предыдущий день</string>
+    <string name="daily_next_day">Следующий день</string>
+    <string name="count_exercises">Количество: </string>
+    <string name="choose_user">Выбрать ученика</string>
+    <string name="select_user">Выбрать ученика</string>
+    <string name="sell_number_days">Выбрать количество дней</string>
+    <string name="get_ticket">Получить абонемент</string>
+    <string name="Cancel">Отмена</string>
+    <string name="Exercises">Занятия</string>
+    <string name="previous_month">Предыдущий месяц</string>
+    <string name="next_month">Следующий месяц</string>
+    <string name="Close">Закрыть</string>
+    <string name="Open">Открыть</string>
+    <string name="user">Ученик</string>
+    <string name="success">Успешно</string>
+    <string name="error">Ошибка</string>
+    <string name="OpenCloseTicket">Открыть/закрыть абонемент</string>
+    <string name="userguide">Гид пользователя приложения</string>
+</resources>
