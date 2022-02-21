@@ -1,2 +1,1 @@
-SeasonTickets72
-Class attendance tracking app
+SeasonTickets72: Class attendance tracking app
