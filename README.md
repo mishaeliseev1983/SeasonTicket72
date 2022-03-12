@@ -13,4 +13,5 @@
         green color - the student was engaged
         white - unchecked.
 
-    "New" - get a new subscription for a student. Classes are held on Tuesday and Friday.    
+    "New" - get a new subscription for a student. 
+    Classes are held on Tuesday and Friday.    
