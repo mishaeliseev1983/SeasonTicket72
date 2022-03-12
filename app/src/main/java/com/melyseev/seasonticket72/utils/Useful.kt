@@ -16,6 +16,8 @@ import com.melyseev.seasonticket72.theme.redDarkPalette
 const val FORMAT_DATE = "dd.MM.yyyy"
 const val MAX_SHOW_DAYS_IN_ROW = 4
 
+val ARGUMENT_KEY_USERID = "userId"
+
 fun String.fromStringToDate(): Date = SimpleDateFormat(FORMAT_DATE).parse(this)
 
 fun Date.fromDateToString(): String = FORMAT_DATE.format(this)

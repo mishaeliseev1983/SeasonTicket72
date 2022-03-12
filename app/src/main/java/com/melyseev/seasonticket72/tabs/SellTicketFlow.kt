@@ -28,35 +28,4 @@ fun NavGraphBuilder.sellTicketFlow(navController: NavController,
         }
 
     }
-
-
 }
-    /*
-    navigation(startDestination = "sellticket/{userId}", route = MainBottomScreen.SellTicket.route) {
-        composable("sellticket/{userId}",
-            arguments = listOf(navArgument("userId") { type = NavType.StringType })) {
-
-            backStackEntry ->
-            val userId = backStackEntry.arguments?.getString("userId")
-            val sellViewModel = hiltViewModel<SellViewModel>()
-
-            if(userId!=null) {
-                sellViewModel.userRepository.selectedUserId = userId.toLong()
-            }
-            SellScreen(
-                navController = navController,
-                sellViewModel = sellViewModel
-            )
-        }
-
-
-        composable("sellticketUserlistChoose") {
-            val userListChooseViewModel = hiltViewModel<UserListChooseViewModel>()
-            UserListChooseScreen(
-                navController = navController,
-                userListChooseViewModel = userListChooseViewModel
-            )
-        }
-    }
-
-     */

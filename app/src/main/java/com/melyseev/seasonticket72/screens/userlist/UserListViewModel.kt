@@ -41,6 +41,12 @@ class UserListViewModel @Inject constructor(
             is UserListViewState.Display -> {
                reduce(event, currentState = UserListViewState.Display(items = currentState.items))
             }
+            /*
+            is UserListViewState.AddUserDisplay -> {
+                reduce(event, currentState = UserListViewState.AddUserDisplay(name = currentState.name,
+                    surname = currentState.surname))
+            }
+            */
 
         }
     }
@@ -61,6 +67,15 @@ class UserListViewModel @Inject constructor(
                 }
             }*/
             }
+
+            /*
+            is UserListViewEvent.AddUser ->{
+                _userListViewState.postValue(
+                    UserListViewState.AddUserDisplay(name = "", surname = "")
+                )
+
+            }
+            */
         }
     }
 
@@ -95,4 +110,31 @@ class UserListViewModel @Inject constructor(
             }
         }
     }
+
+    /*
+    private fun reduce(event: UserListViewEvent, currentState: UserListViewState.AddUserDisplay) {
+        when (event) {
+            is UserListViewEvent.OnChangeName ->{
+                viewModelScope.launch {
+                    _userListViewState.postValue( currentState.copy(name = event.name))
+                }
+            }
+
+            is UserListViewEvent.OnChangeSurname ->{
+                viewModelScope.launch {
+                    _userListViewState.postValue( currentState.copy(surname = event.surname))
+                }
+            }
+
+            UserListViewEvent.OnSaveNewUser -> {
+                viewModelScope.launch {
+                    _userListViewState.postValue(currentState.copy())
+                }
+            }
+        }
+    }
+     */
+
+
 }
+

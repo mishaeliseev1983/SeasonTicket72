@@ -1,4 +1,4 @@
-package com.melyseev.seasonticket72.screens.adduser.views
+package com.melyseev.seasonticket72.screens.userlist.screen_adduser.views
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button

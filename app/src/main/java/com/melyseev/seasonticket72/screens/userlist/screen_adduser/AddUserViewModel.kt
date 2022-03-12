@@ -1,4 +1,4 @@
-package com.melyseev.seasonticket72.screens.adduser
+package com.melyseev.seasonticket72.screens.userlist.screen_adduser
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -7,13 +7,10 @@ import androidx.lifecycle.viewModelScope
 import com.melyseev.seasonticket72.base.EventHandler
 import com.melyseev.seasonticket72.data.user.UserEntity
 import com.melyseev.seasonticket72.data.user.UserRepository
-import com.melyseev.seasonticket72.screens.adduser.model.AddUserViewEvent
-import com.melyseev.seasonticket72.screens.adduser.model.AddUserViewState
-import com.melyseev.seasonticket72.screens.adduser.views.ErrorAddNewUser
-import com.melyseev.seasonticket72.screens.adduser.views.InitialAddNewUser
+import com.melyseev.seasonticket72.screens.userlist.screen_adduser.model.AddUserViewEvent
+import com.melyseev.seasonticket72.screens.userlist.screen_adduser.model.AddUserViewState
 
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

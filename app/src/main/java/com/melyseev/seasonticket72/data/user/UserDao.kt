@@ -5,6 +5,9 @@ import androidx.room.*
 @Dao
 interface UserDao {
 
+    @Delete
+    suspend fun delete(entity: UserEntity)
+
     @Insert
     suspend fun insert(entity: UserEntity)
 

@@ -11,10 +11,10 @@ data class UserEntity(
     val id: Long = 0L,
 
     @ColumnInfo(name = USER_NAME)
-    val name: String,
+    var name: String,
 
     @ColumnInfo(name = USER_SURNAME)
-    val surname: String,
+    var surname: String,
 ) {
     companion object {
         const val TABLE_USER = "User_Entity"

@@ -40,7 +40,7 @@ fun SeasonTicketViewUserGuide() {
                                     top = JetDanceTheme.shapes.padding + 8.dp
                                 ),
                                 text = stringResource(id = R.string.userguide),
-                                style = JetDanceTheme.typography.heading,
+                                style = JetDanceTheme.typography.body,
                                 color = JetDanceTheme.colors.primaryText
                             )
                         }

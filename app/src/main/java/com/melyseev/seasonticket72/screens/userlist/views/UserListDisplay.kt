@@ -9,9 +9,7 @@ import androidx.compose.material.Icon
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.Backup
-import androidx.compose.material.icons.filled.Create
+import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -23,6 +21,7 @@ import com.melyseev.seasonticket72.screens.userlist.model.UserListViewState
 import com.melyseev.seasonticket72.R
 import com.melyseev.seasonticket72.commonview.UserCardItem
 import com.melyseev.seasonticket72.theme.JetDanceTheme
+import com.melyseev.seasonticket72.utils.ARGUMENT_KEY_USERID
 
 
 @ExperimentalFoundationApi
@@ -43,7 +42,8 @@ fun UserListDisplay(
             stickyHeader {
                 Row(
                     modifier = Modifier.fillMaxWidth(),
-                    verticalAlignment = Alignment.CenterVertically
+                    verticalAlignment = Alignment.CenterVertically,
+
                 ) {
                     Column(modifier = Modifier.weight(1f)) {
                         Text(
@@ -100,6 +100,11 @@ fun UserListDisplay(
                             UserCardItem(model = it,
 
                                 onClickCardItem = {
+                                    //second way
+                                    //navController.navigate("infouser/{${it.id}}")
+
+                                    navController.navigate("infouser/?$ARGUMENT_KEY_USERID=${it.id}")
+
                             })
                         }
                     }
@@ -112,10 +117,14 @@ fun UserListDisplay(
                 .padding(JetDanceTheme.shapes.padding),
             backgroundColor = JetDanceTheme.colors.tintColor,
             onClick = {
+
+                // addUserEvent()
+
+                //second way
                 navController.navigate("adduser")
             }) {
             Icon(
-                imageVector = Icons.Filled.Create,
+                imageVector = Icons.Filled.Add,
                 contentDescription = "Settings icon",
                 tint = Color.White
             )

@@ -1,4 +1,4 @@
-package com.melyseev.seasonticket72.screens.adduser.views
+package com.melyseev.seasonticket72.screens.userlist.screen_adduser.views
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -13,7 +13,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
 import com.melyseev.seasonticket72.R
-import com.melyseev.seasonticket72.screens.adduser.model.AddUserViewState
+import com.melyseev.seasonticket72.screens.userlist.screen_adduser.model.AddUserViewState
 import com.melyseev.seasonticket72.theme.JetDanceTheme
 
 @ExperimentalFoundationApi

@@ -11,6 +11,13 @@ class UserRepository @Inject constructor(
         userDao.insert(userEntity)
     }
 
+    suspend fun deleteUser(userEntity: UserEntity){
+        userDao.delete(userEntity)
+    }
+    suspend fun updateUser(userEntity: UserEntity) {
+        userDao.update(userEntity)
+    }
+
     suspend fun fetchUserList(): List<UserEntity> =
         userDao.getAll()
 

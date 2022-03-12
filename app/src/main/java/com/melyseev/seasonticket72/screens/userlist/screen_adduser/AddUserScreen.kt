@@ -1,19 +1,17 @@
-package com.melyseev.seasonticket72.screens.adduser
+package com.melyseev.seasonticket72.screens.userlist.screen_adduser
 
-import android.widget.Toast
 import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.material.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.navigation.NavController
-import com.melyseev.seasonticket72.screens.adduser.model.AddUserViewEvent
-import com.melyseev.seasonticket72.screens.adduser.model.AddUserViewState
-import com.melyseev.seasonticket72.screens.adduser.views.ErrorAddNewUser
-import com.melyseev.seasonticket72.screens.adduser.views.InitialAddNewUser
-import com.melyseev.seasonticket72.screens.adduser.views.SuccessAddNewUser
+import com.melyseev.seasonticket72.screens.userlist.screen_adduser.model.AddUserViewEvent
+import com.melyseev.seasonticket72.screens.userlist.screen_adduser.model.AddUserViewState
+import com.melyseev.seasonticket72.screens.userlist.screen_adduser.views.ErrorAddNewUser
+import com.melyseev.seasonticket72.screens.userlist.screen_adduser.views.InitialAddNewUser
+import com.melyseev.seasonticket72.screens.userlist.screen_adduser.views.SuccessAddNewUser
 
 
 

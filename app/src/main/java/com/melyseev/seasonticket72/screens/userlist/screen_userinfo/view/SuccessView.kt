@@ -1,6 +1,5 @@
-package com.melyseev.seasonticket72.screens.adduser.views
+package com.melyseev.seasonticket72.screens.userlist.screen_userinfo.view
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -12,14 +11,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.melyseev.seasonticket72.R
-import com.melyseev.seasonticket72.screens.adduser.model.AddUserViewState
 import com.melyseev.seasonticket72.theme.JetDanceTheme
 
 
 @Composable
-fun SuccessAddNewUser(
+fun SuccessView(
     modifier: Modifier = Modifier,
-    state: AddUserViewState.SuccessDisplay,
+    //state: AddUserViewState.SuccessDisplay,
     onCloseClick: () -> Unit) {
     Surface(
         modifier = modifier.fillMaxSize(),

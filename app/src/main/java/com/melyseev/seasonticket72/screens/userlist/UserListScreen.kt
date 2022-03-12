@@ -33,9 +33,25 @@ fun UserListScreen(
 
             modifier = modifier,
             navController = navController,
-            viewState = state
+            viewState = state,
         )
 
+        /*
+        is UserListViewState.AddUserDisplay -> InitialAddNewUser(
+            modifier = modifier,
+            state = state,
+            navController = navController ,
+            onChangeName = {
+                userListViewModel.obtainEvent(UserListViewEvent.OnChangeName(it))
+            },
+            onChangeSurname = {
+                userListViewModel.obtainEvent(UserListViewEvent.OnChangeSurname(it))
+            },
+            onSaveClicked = {
+                userListViewModel.obtainEvent(UserListViewEvent.OnSaveNewUser)
+            }
+        )
+         */
     }
 
     LaunchedEffect(key1 = viewState, block = {

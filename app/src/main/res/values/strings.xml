@@ -4,11 +4,15 @@
     <string name="title_season_ticket">Season ticket</string>
     <string name="user_list">Users</string>
     <string name="add_user_new_record">Add new user</string>
-    <string name="add_user_name">Add name</string>
+    <string name="edit_user_record">Edit user</string>
+    <string name="add_user_name">Name</string>
     <string name="action_add">Add</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_ask_delete">Delete this user</string>
     <string name="success_add">Success</string>
     <string name="action_close">Close</string>
-    <string name="add_user_surname">Add surname</string>
+    <string name="add_user_surname">Surname</string>
     <string name="error_add">Name or surname cannot be empty</string>
     <string name="error_last_ticket_still_open">Your ticket is still open. You need to close ticket.</string>
     <string name="error_bad_data">Invalid date. Select a date later than the closing date of your last subscription.</string>
@@ -31,5 +35,20 @@
     <string name="success">Success</string>
     <string name="error">Error</string>
     <string name="OpenCloseTicket">Open/Close season ticket</string>
-    <string name="userguide">User guide</string>
+    <string name="userguide">
+    The app allows you to track salsa classes.\n\n
+    \"Students\" - add/edit/delete\n\n
+    \"Attendance\" - shows the dates on which classes took place or will take place\n
+     students for the selected month.\n
+     Gray color of the date - the subscription is no longer valid.\n\n
+     Blue color of the date - the subscription is valid and can be edited by touching:\n
+        \ \ red - student missed class\n
+        \ \ green color - the student was engaged\n
+        \ \ white - unchecked.\n
+
+    \"New\" - get a new subscription for a student\n
+    Classes are held on Tuesday and Friday.
+
+    </string>
+    <string name="no">No</string>
 </resources>

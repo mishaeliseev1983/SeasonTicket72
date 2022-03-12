@@ -70,7 +70,7 @@ fun SeasonTicketViewTicketCloseOpen(
                                 bottom = JetDanceTheme.shapes.padding + 8.dp
                             )
                             .fillMaxWidth(),
-                        horizontalArrangement = Arrangement.Center
+                        horizontalArrangement = Arrangement.SpaceEvenly
                     ) {
                         Button(
                             modifier = Modifier
@@ -99,11 +99,35 @@ fun SeasonTicketViewTicketCloseOpen(
                             )
                         }
 
+                        Button(
+                            modifier = Modifier
+                                //.padding(top = 16.dp)
+                                .padding(
+                                    start = JetDanceTheme.shapes.padding,
+                                    end = JetDanceTheme.shapes.padding,
+                                    top = 30.dp,
+                                )
+                                .height(48.dp),
+                            onClick = {
+                                onOpenSeasonTicket()
+                            },
 
-
+                            colors = ButtonDefaults.buttonColors(
+                                backgroundColor = JetDanceTheme.colors.controlColor,
+                                disabledBackgroundColor = JetDanceTheme.colors.controlColor.copy(
+                                    alpha = 0.3f
+                                )
+                            )
+                        ) {
+                            Text(
+                                text = stringResource(id = R.string.Open),
+                                style = JetDanceTheme.typography.body,
+                                color = Color.White
+                            )
+                        }
                     }
 
-
+/*
                     Row(
                         modifier = Modifier
                             .padding(
@@ -142,6 +166,7 @@ fun SeasonTicketViewTicketCloseOpen(
                             )
                         }
                     }
+                    */
 
                 }
 

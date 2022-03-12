@@ -1,4 +1,4 @@
-package com.melyseev.seasonticket72.screens.adduser.model
+package com.melyseev.seasonticket72.screens.userlist.screen_adduser.model
 
 sealed class AddUserViewState {
     data class AddDisplay(val name: String, val surname : String, var error: Boolean = false): AddUserViewState()

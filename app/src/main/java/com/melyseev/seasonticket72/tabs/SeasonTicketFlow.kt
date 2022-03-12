@@ -29,6 +29,4 @@ fun NavGraphBuilder.seasonTicketFlow(navController: NavController,
             )
         }
     }
-
-
 }
