@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.melyseev.seasonticket72.base.EventHandler
+import com.melyseev.seasonticket72.data.seasonticket.SeasonTicketRepository
 import com.melyseev.seasonticket72.data.user.UserRepository
 import com.melyseev.seasonticket72.screens.userlist.screen_userinfo.model.UserInfoViewEvent
 import com.melyseev.seasonticket72.screens.userlist.screen_userinfo.model.UserInfoViewState
@@ -14,8 +15,10 @@ import javax.inject.Inject
 
 @HiltViewModel
 class UserInfoViewModel @Inject constructor(
-    private val userRepository: UserRepository
-): ViewModel(), EventHandler<UserInfoViewEvent> {
+    private val userRepository: UserRepository,
+    private val seasonTicketRepository: SeasonTicketRepository,
+
+    ): ViewModel(), EventHandler<UserInfoViewEvent> {
 
     private val _viewState: MutableLiveData<UserInfoViewState> =
         MutableLiveData(UserInfoViewState.InfoDisplay("", ""))
@@ -50,6 +53,7 @@ class UserInfoViewModel @Inject constructor(
 
                 viewModelScope.launch {
                     val userEntity = userRepository.getUserNameSurnameById(event.id)
+                    seasonTicketRepository.deleteRowsByIdUser(idUser =  event.id)
                     userRepository.deleteUser(userEntity = userEntity)
 
                     _viewState.postValue(

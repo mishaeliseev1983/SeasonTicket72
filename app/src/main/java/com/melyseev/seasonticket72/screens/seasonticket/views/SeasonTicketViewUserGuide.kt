@@ -20,14 +20,16 @@ fun SeasonTicketViewUserGuide() {
 
 
 
-    Surface(
+    /*Surface(
         modifier = Modifier.fillMaxSize(),
         color = JetDanceTheme.colors.primaryBackground
     ) {
+
+     */
         Box {
 
             LazyColumn {
-                stickyHeader {
+                item {
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         verticalAlignment = Alignment.CenterVertically
@@ -48,5 +50,5 @@ fun SeasonTicketViewUserGuide() {
                 }
             }
         }
-    }
+   // }
 }

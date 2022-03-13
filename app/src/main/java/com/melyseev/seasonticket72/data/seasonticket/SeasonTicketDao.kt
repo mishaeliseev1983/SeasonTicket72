@@ -18,7 +18,7 @@ interface SeasonTicketDao {
     suspend fun getAll(): List<SeasonTicketEntity>
 
 
-        /*
+    /*
     MONTH - substr(SeasonTicket_DateBegin, 4, 2)
     YEAR -  substr(SeasonTicket_DateBegin, 7, 4)
      */
@@ -42,4 +42,8 @@ interface SeasonTicketDao {
 
     @Query("SELECT * from ${SeasonTicketEntity.TABLE_SEASON_TICKET}  WHERE SeasonTicket_IdUser = :idUser ORDER BY SeasonTicket_DateEnd LIMIT 1 ")
     suspend fun getLastRowByIdUser(idUser: Long): SeasonTicketEntity?
+
+
+    @Query("DELETE from ${SeasonTicketEntity.TABLE_SEASON_TICKET}  WHERE SeasonTicket_IdUser = :idUser")
+    suspend fun deleteRowsByIdUser(idUser: Long)
 }

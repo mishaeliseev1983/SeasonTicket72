@@ -32,4 +32,7 @@ class SeasonTicketRepository @Inject constructor(
     suspend fun update(entity: SeasonTicketEntity) =
         seasonTicketDao.update(entity = entity)
 
+    suspend fun deleteRowsByIdUser(idUser: Long) =
+        seasonTicketDao.deleteRowsByIdUser(idUser = idUser)
+
 }
